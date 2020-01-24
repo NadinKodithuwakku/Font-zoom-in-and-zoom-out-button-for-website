@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>githubNK</title>
+    <!--  Connect  javaScript-->
+    <script src="JavaScript/font-change.js"></script>
+
+    <!--  Internal CSS-->
+    <style>
+        button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        #input-1 {background-color: #008CBA;} /* Blue */
+        #input-2 {background-color: #555555;} /* Black */
+
+        .change-area {background-color: #f44336;} /* Red */
+    </style>
+
+</head>
+<body>
+<header>
+    <h1>Web font size change example</h1>
+</header>
+
+<div id="font-btn">
+    <button id="input-1" type="button" value="Increase Font Size 5px" onclick="upClick()">Zoom in</button>
+    <button id="input-2" type="button" value="decrease Font Size 5px" onclick="downClick()"> Zoom out</button>
+</div>
+
+<div>
+    <h3 class="default area" align="center"> This text area <br>
+    will not <br>
+    change
+    </h3>
+</div>
+
+<div id="font-change">  <!--add div id to especially identify the area which we want to change the font size. -->
+    <h2 class="change-area" align="center">This area <br>
+    will change <br>
+    the font <br>
+    size
+    </h2>
+</div>
+
+</body>
+</html>

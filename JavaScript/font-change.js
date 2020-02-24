@@ -20,7 +20,9 @@ function decreaseFontSizeBy5px() {
 function setDefault() {                                       
     txt = document.getElementById('font-change');             //div tag id where u want to decrease the font size of your text field
     style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
-    txt.style.fontSize = "initial" 
+    txt.style.fontSize = "initial";
+	countClicksUp = 0;
+	countClicksDown = 0;
 }
 
 function upClick(){

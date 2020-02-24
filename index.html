@@ -23,7 +23,16 @@
         #input-1 {background-color: #008CBA;} /* Blue */
         #input-2 {background-color: #555555;} /* Black */
 
-        .change-area {background-color: #f44336;} /* Red */
+        .change-area {
+			padding-top : 7%;
+			padding-bottom : 7%;
+		}
+		
+		#font-change {
+			background-color: #f44336; /* Red */
+			width : auto;
+			height : 300px;
+		}
     </style>
 
 </head>
@@ -35,6 +44,7 @@
 <div id="font-btn">
     <button id="input-1" type="button" value="Increase Font Size 5px" onclick="upClick()">Zoom in</button>
     <button id="input-2" type="button" value="decrease Font Size 5px" onclick="downClick()"> Zoom out</button>
+    <button id="input-2" type="button" value="decrease Font Size 5px" onclick="setDefault()"> Default</button>
 </div>
 
 <div>
@@ -51,6 +61,5 @@
     size
     </h2>
 </div>
-
 </body>
 </html>
